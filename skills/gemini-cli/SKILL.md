@@ -143,7 +143,7 @@ agy -p "<PROMPT>" \
   --conversation <CONVERSATION_ID>
 ```
 
-Prefer independent invocations unless previous Gemini conversation context is specifically required.
+Prefer independent invocations unless previous Gemini conversation context is useful or required.
 
 ## Timeout
 
