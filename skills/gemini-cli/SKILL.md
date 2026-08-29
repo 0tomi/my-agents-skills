@@ -7,28 +7,6 @@ description: Invoke Gemini models non-interactively through the installed CLI, c
 
 Use the installed `agy` CLI to invoke Gemini models non-interactively.
 
-## Initial quota check
-
-Before the first Gemini invocation of the current orchestration run, check subscription quota:
-
-```bash
-agy -p "/usage" 
-```
-
-Perform this check once before using Gemini for the first time.
-
-Inspect the `Gemini Models` quota group.
-
-If either required quota bucket has no remaining quota:
-
-* Do not invoke Gemini.
-* Do not retry Gemini.
-* Treat Gemini as unavailable for the remainder of the current orchestration run.
-
-If quota remains available, Gemini may be used normally.
-
-Do not run `/usage` before every successful invocation.
-
 ## Default invocation
 
 Invoke Gemini with:
